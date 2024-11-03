@@ -1,0 +1,25 @@
+{
+  "name": "assignmentsaucedemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio run ./wdio.conf.js",
+    "runspecFiles": "wdio run ./wdio.conf.js --suite runspecFiles",
+    "getReport": "allure generate allure-results --clean && allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.2.2",
+    "@wdio/cli": "^9.2.4",
+    "@wdio/local-runner": "^9.2.4",
+    "@wdio/mocha-framework": "^9.2.2",
+    "@wdio/spec-reporter": "^9.2.2",
+    "wdio-wait-for": "^3.0.11"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.32.0"
+  }
+}
