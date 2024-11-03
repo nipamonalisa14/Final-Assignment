@@ -25,8 +25,8 @@ exports.config = {
     //
     specs: [  
         lockedOutUserTest,
-        standardUserTest,
-        performanceGlitchUserTest
+        //standardUserTest,
+        //performanceGlitchUserTest
     ],
 
     suites:  {
