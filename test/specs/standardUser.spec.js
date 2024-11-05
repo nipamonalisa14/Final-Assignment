@@ -1,5 +1,4 @@
 const standardUserActions = require('../pages/standardUser/standardUserAction');
-//const utility = require("../utilities/utility");
 const username = 'standard_user';
 const password = 'secret_sauce';
 
@@ -55,7 +54,6 @@ describe('Standard User Test', () => {
         // console.log(Item Price: ${typeof itemPrice});
         expect(calculatedTotal).toEqual(itemPrice);
 
-        //
         const expectedTotal = calculatedTotal + (calculatedTotal * percentageOfTax);
         const totalPricewithTax = await standardUserActions.totalPriceWithTax();
         expect(expectedTotal).toBeCloseTo(totalPricewithTax);

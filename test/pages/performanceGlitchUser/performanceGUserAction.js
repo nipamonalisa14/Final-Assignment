@@ -78,7 +78,8 @@ async getProductPriceFromInventory(count) {
     const itemPrices = [];
     for (let i = 0; i < count; i++) {
         var productPrice = await productPricefromList[i].getText();
-        const price = parseFloat(productPrice.replace('$', ''));
+        //const price = parseFloat(productPrice.replace('$', ''));
+        const price = await utility.priceTextToNumber(productPrice);
         itemPrices.push(price);
         //   console.log(Product Price: ${productPrice});         
     }
@@ -96,7 +97,8 @@ async getTotalItemPriceWithoutTax() {
 async getTotalItemPriceWithTax() {
     await browser.pause(2000);
     const itemTotalTax = await performenceGlitchUserLocators.totalItemPriceWithTax.getText();
-    const itemTotalwithTax = await parseFloat(itemTotalTax.replace('Total: $', ''));
+    //const itemTotalwithTax = await parseFloat(itemTotalTax.replace('Total: $', ''));
+    const itemTotalwithTax = await utility.textToNumber(itemTotalTax);
     await browser.pause(2000);
     return itemTotalwithTax;
 }

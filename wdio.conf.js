@@ -25,14 +25,14 @@ exports.config = {
     //
     specs: [  
         lockedOutUserTest,
-        //standardUserTest,
-        //performanceGlitchUserTest
+        standardUserTest,
+        performanceGlitchUserTest
     ],
 
     suites:  {
         runspecFiles: [
-          // [lockedOutUserTest],
-          //[lockedOutUserTest,standardUserTest,performanceGlitchUserTest]
+           //[lockedOutUserTest],
+          [lockedOutUserTest,standardUserTest,performanceGlitchUserTest]
         ],
       },
     // Patterns to exclude.
@@ -248,8 +248,6 @@ exports.config = {
      */
     // afterTest: function(test, context, { error, result, duration, passed, retries }) {
     // },
-    afterTest: function(test, context, { error, result, duration, passed, retries }) {
-    },
     afterTest: async function (
         test,
         context,
@@ -261,13 +259,13 @@ exports.config = {
           );
         }
       },
-
     /**
      * Hook that gets executed after the suite has ended
      * @param {object} suite suite details
      */
     // afterSuite: function (suite) {
     // },
+
     /**
      * Runs after a WebdriverIO command gets executed
      * @param {string} commandName hook command name
