@@ -1,6 +1,16 @@
 
 # 1. Clone the assignment file from github repository, link: https://github.com/nipamonalisa14/Final-Assignment.git
 
+### Environment Setup
+Clone the repository to your local computer
+```
+git clone https://github.com/nipamonalisa14/Final-Assignment.git
+```
+Use the package manager `npm` to install dependencies:
+```
+npm install
+```
+
 ## 2. Open it to VS Code
 3. Go to the VS Code terminal, then execute the following commands,
 To initialize the node module: 
