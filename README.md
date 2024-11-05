@@ -11,22 +11,33 @@ Use the package manager `npm` to install dependencies:
 npm install
 ```
 
-## 2. Open it to VS Code
-3. Go to the VS Code terminal, then execute the following commands,
+## Go to the VS Code terminal, then execute the following commands,
 To initialize the node module: 
- ```npm init -y```
+ ```
+ npm init -y
+ ```
 To add the CLI package: 
-```npm i --save-dev @wdio/cli``
+```
+npm i --save-dev @wdio/cli
+``
 To add a full WebdriverIO setup:
- ```npm init wdio@latest```
-4. Run Code
+ ```
+ npm init wdio@latest
+ ```
+## Run Code
 To run specs, execute: 
-```npm run test``
-To run suites, execute: 
-```npm run runspecFiles```
-5. Allure Report Setup
-1. ```npm install @wdio/allure-reporter --save-dev```
-2. reporter ===>in wdio.config.js then
+```
+npm run test
+```
+## To run suites, execute: 
+```
+npm run runspecFiles
+```
+## Allure Report Setup
+```
+npm install @wdio/allure-reporter --save-dev
+```
+## reporter ===>in wdio.config.js then
     <blockquote> 
             reporters: [['allure', {
             outputDir: 'allure-results',
@@ -34,11 +45,18 @@ To run suites, execute:
             disableWebdriverScreenshotsReporting: false,
          }]],
     </blockquote>
-3. ```npm i allure-commandline```
-4. ```npm run test```
 
-6.  To get report, execute following command: 
-    ```npm run getReport```
+ ```
+ npm i allure-commandline
+ ```
+```
+npm run test
+```
 
-7. Screenshot
+## To get report, execute following command: 
+    ```
+    npm run getReport
+    ```
+
+## Screenshot
 ![Allure Report](allure-report.png)
