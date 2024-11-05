@@ -46,10 +46,8 @@ npm install @wdio/allure-reporter --save-dev
          }]],
 
 
-```
 npm i allure-commandline
 ```
-
 To run specs, execute: 
 ```
 npm run test
@@ -57,8 +55,7 @@ npm run test
 To run suites, execute: 
 ```
 npm run runspecFiles
-
-
+```
 ### To get report, execute following command: 
     ```
     npm run getReport
