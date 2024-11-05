@@ -1,6 +1,5 @@
 
-# 1. Clone the assignment file from github repository, link: https://github.com/nipamonalisa14/Final-Assignment.git
-
+# Assignment Site Link --> https://www.saucedemo.com/
 ### Environment Setup
 Clone the repository to your local computer
 ```
@@ -25,11 +24,11 @@ To add a full WebdriverIO setup:
 npm init wdio@latest
 ```
 ## Run Code
-To run specs, execute: 
+To run specs for separately, execute: 
 ```
 npm run test
 ```
-## To run suites, execute: 
+## To run suites for sequential way, execute: 
 ```
 npm run runspecFiles
 ```
