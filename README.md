@@ -11,19 +11,19 @@ Use the package manager `npm` to install dependencies:
 npm install
 ```
 
-## Go to the VS Code terminal, then execute the following commands,
+### Go to the VS Code terminal, then execute the following commands,
 To initialize the node module: 
- ```
- npm init -y
- ```
+```
+npm init -y
+```
 To add the CLI package: 
 ```
 npm i --save-dev @wdio/cli
-``
+```
 To add a full WebdriverIO setup:
- ```
- npm init wdio@latest
- ```
+```
+npm init wdio@latest
+```
 ## Run Code
 To run specs, execute: 
 ```
@@ -38,22 +38,28 @@ npm run runspecFiles
 npm install @wdio/allure-reporter --save-dev
 ```
 ## reporter ===>in wdio.config.js then
-    <blockquote> 
+```
             reporters: [['allure', {
             outputDir: 'allure-results',
             disableWebdriverStepsReporting: false,
             disableWebdriverScreenshotsReporting: false,
          }]],
-    </blockquote>
 
- ```
- npm i allure-commandline
- ```
+
+```
+npm i allure-commandline
+```
+
+To run specs, execute: 
 ```
 npm run test
 ```
+To run suites, execute: 
+```
+npm run runspecFiles
 
-## To get report, execute following command: 
+
+### To get report, execute following command: 
     ```
     npm run getReport
     ```
