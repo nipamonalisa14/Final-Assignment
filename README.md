@@ -44,8 +44,9 @@ npm install @wdio/allure-reporter --save-dev
             disableWebdriverStepsReporting: false,
             disableWebdriverScreenshotsReporting: false,
          }]],
-
-
+```
+## Allure Commandline
+```
 npm i allure-commandline
 ```
 To run specs, execute: 
@@ -56,10 +57,10 @@ To run suites, execute:
 ```
 npm run runspecFiles
 ```
-### To get report, execute following command: 
-    ```
-    npm run getReport
-    ```
+## To get report, execute following command: 
+```
+npm run getReport
+```
 
 ## Screenshot
 ![Allure Report](allure-report.png)
